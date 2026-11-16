@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "R.O.C.A.",
+    "slug": "roca-farm",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.soilseason.farmplanner",
+      "allowBackup": false,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "R.O.C.A. uses your location only while the app is open to find the nearest city and provide local farm, weather, and soil information."
+        }
+      ],
+      "expo-secure-store",
+      "expo-system-ui",
+      "./plugins/withGradleProjectName.js"
+    ]
+  }
+}
